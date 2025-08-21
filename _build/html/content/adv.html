@@ -1,0 +1,1314 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Análise de Vendas - Portfólio de Análise de Dados &#8212; Meu portifólio de projetos</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/adv';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Meu portifólio de projetos - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Meu portifólio de projetos - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Análise de Vendas - Portfólio de Análise de Dados</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/adv.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/adv.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Análise de Vendas - Portfólio de Análise de Dados</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Análise de Vendas - Portfólio de Análise de Dados</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carregar-e-explorar-o-dataset">2. Carregar e Explorar o Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nivel-1-basico">3. Nível 1 — Básico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selecao-de-dados">3.2 Seleção de Dados</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nivel-2-intermediario">4. Nível 2 — Intermediário</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criar-coluna-calculada">4.1 Criar Coluna Calculada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filtros">4.2 Filtros</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupamentos">4.3 Agrupamentos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordenacoes">4.4 Ordenações</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nivel-3-avancado">5. Nível 3 — Avançado</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-temporal">5.1 Análise Temporal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clientes">5.2 Clientes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacoes">5.3 Visualizações</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mini-dashboard-interativo">6. Mini Dashboard interativo</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">7. Conclusão</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="analise-de-vendas-portfolio-de-analise-de-dados">
+<h1>Análise de Vendas - Portfólio de Análise de Dados<a class="headerlink" href="#analise-de-vendas-portfolio-de-analise-de-dados" title="Link to this heading">#</a></h1>
+<p>Neste notebook, o objetivo é demonstrar a análise de dados utilizando a biblioteca pandas. Serão abordados exercícios de diferentes níveis de complexidade para extrair insights dos dados relacionados a vendas, produtos, e clientes.</p>
+<p>O dataset contém informações sobre pedidos de produtos, e será analisado de maneira progressiva:</p>
+<ul class="simple">
+<li><p><strong>Nível 1 (Básico)</strong>: Operações iniciais com pandas</p></li>
+<li><p><strong>Nível 2 (Intermediário)</strong>: Agrupamentos, cálculos e filtros</p></li>
+<li><p><strong>Nível 3 (Avançado)</strong>: Análises temporais, análises por cliente e visualizações</p></li>
+</ul>
+<p>Vamos começar carregando e explorando o dataset.</p>
+<section id="carregar-e-explorar-o-dataset">
+<h2>2. Carregar e Explorar o Dataset<a class="headerlink" href="#carregar-e-explorar-o-dataset" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Carregar o dataset.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importação das bibliotecas necessárias</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">plotly.io</span> <span class="k">as</span> <span class="nn">pio</span>
+<span class="n">pio</span><span class="o">.</span><span class="n">renderers</span><span class="o">.</span><span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;notebook_connected&quot;</span> <span class="c1"># </span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Evitar &quot;quebra&quot; da tabela</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;Display.max_columns&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;Display.width&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Utilizo Path.home() para acessar o caminho da pasta do usuário atual, dessa forma o código fica mais portável e limpo.</span>
+<span class="n">caminho</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;Downloads&quot;</span> <span class="o">/</span> <span class="s2">&quot;vendas_loja.csv&quot;</span> 
+
+<span class="c1"># Utilizo o pandas para ler o arquivo csv e transforma-lo em tabela.</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">caminho</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    order_id        data  cliente_id         produto    categoria  quantidade  preco_unitario          cidade
+0          1  2024-01-01        1051        Notebook  Eletrônicos           3            2066  Rio de Janeiro
+1          2  2024-01-02        1092  Fone de Ouvido  Eletrônicos           2             143       São Paulo
+2          3  2024-01-03        1014           Livro       Livros           4              48  Belo Horizonte
+3          4  2024-01-04        1071        Notebook  Eletrônicos           3            3444  Belo Horizonte
+4          5  2024-01-05        1060        Camiseta       Roupas           1              61       São Paulo
+5          6  2024-01-06        1020      Smartphone  Eletrônicos           2            2430        Salvador
+6          7  2024-01-07        1082           Tênis       Roupas           3              95       São Paulo
+7          8  2024-01-08        1086        Camiseta       Roupas           2             179  Rio de Janeiro
+8          9  2024-01-09        1074  Fone de Ouvido  Eletrônicos           3             352       São Paulo
+9         10  2024-01-10        1074        Notebook  Eletrônicos           2            3546  Belo Horizonte
+10        11  2024-01-11        1087           Tênis       Roupas           1              84       São Paulo
+11        12  2024-01-12        1099        Notebook  Eletrônicos           4            3774        Salvador
+12        13  2024-01-13        1023  Fone de Ouvido  Eletrônicos           1             436        Curitiba
+13        14  2024-01-14        1002        Notebook  Eletrônicos           4            1089       São Paulo
+14        15  2024-01-15        1021      Smartphone  Eletrônicos           2            1575        Salvador
+15        16  2024-01-16        1052           Tênis       Roupas           3             142        Salvador
+16        17  2024-01-17        1001           Tênis       Roupas           1             139  Belo Horizonte
+17        18  2024-01-18        1087  Fone de Ouvido  Eletrônicos           4             214        Salvador
+18        19  2024-01-19        1029      Smartphone  Eletrônicos           1            1416        Salvador
+19        20  2024-01-20        1037        Camiseta       Roupas           4             184        Salvador
+20        21  2024-01-21        1001        Notebook  Eletrônicos           1            1825        Salvador
+21        22  2024-01-22        1063           Livro       Livros           4              94  Rio de Janeiro
+22        23  2024-01-23        1059        Notebook  Eletrônicos           4            1412  Rio de Janeiro
+23        24  2024-01-24        1020        Notebook  Eletrônicos           2            1728  Belo Horizonte
+24        25  2024-01-25        1032        Camiseta       Roupas           4              70       São Paulo
+25        26  2024-01-26        1075        Notebook  Eletrônicos           2            3808        Salvador
+26        27  2024-01-27        1057      Smartphone  Eletrônicos           4            1475       São Paulo
+27        28  2024-01-28        1021      Smartphone  Eletrônicos           3            2217       São Paulo
+28        29  2024-01-29        1088           Tênis       Roupas           3             150  Belo Horizonte
+29        30  2024-01-30        1048  Fone de Ouvido  Eletrônicos           3             291        Salvador
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Exibir as 5 primeiras e 5 últimas linhas.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   order_id        data  cliente_id         produto    categoria  quantidade  preco_unitario          cidade
+0         1  2024-01-01        1051        Notebook  Eletrônicos           3            2066  Rio de Janeiro
+1         2  2024-01-02        1092  Fone de Ouvido  Eletrônicos           2             143       São Paulo
+2         3  2024-01-03        1014           Livro       Livros           4              48  Belo Horizonte
+3         4  2024-01-04        1071        Notebook  Eletrônicos           3            3444  Belo Horizonte
+4         5  2024-01-05        1060        Camiseta       Roupas           1              61       São Paulo
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     order_id        data  cliente_id     produto    categoria  quantidade  preco_unitario          cidade
+195       196  2024-07-14        1076  Smartphone  Eletrônicos           4            1023  Belo Horizonte
+196       197  2024-07-15        1002  Smartphone  Eletrônicos           3            2062        Curitiba
+197       198  2024-07-16        1069    Notebook  Eletrônicos           1            3224       São Paulo
+198       199  2024-07-17        1071    Notebook  Eletrônicos           1            2802  Belo Horizonte
+199       200  2024-07-18        1026    Notebook  Eletrônicos           4            1852       São Paulo
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Verificar o número de linhas e colunas.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mostrar o numero total de linhas e colunas da tabela</span>
+<span class="n">linhas</span><span class="p">,</span> <span class="n">colunas</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Número de linhas contidas na tabela: </span><span class="si">{</span><span class="n">linhas</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Número de colunas contidas na tabela: </span><span class="si">{</span><span class="n">colunas</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Número de linhas contidas na tabela: 200
+Número de colunas contidas na tabela: 8
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Verificar o tipo de cada coluna.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tipo de cada coluna</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 200 entries, 0 to 199
+Data columns (total 8 columns):
+ #   Column          Non-Null Count  Dtype 
+---  ------          --------------  ----- 
+ 0   order_id        200 non-null    int64 
+ 1   data            200 non-null    object
+ 2   cliente_id      200 non-null    int64 
+ 3   produto         200 non-null    object
+ 4   categoria       200 non-null    object
+ 5   quantidade      200 non-null    int64 
+ 6   preco_unitario  200 non-null    int64 
+ 7   cidade          200 non-null    object
+dtypes: int64(4), object(4)
+memory usage: 12.6+ KB
+None
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>order_id           int64
+data              object
+cliente_id         int64
+produto           object
+categoria         object
+quantidade         int64
+preco_unitario     int64
+cidade            object
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Exibir estatísticas descritivas do dataset.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Média de preço dos produtos</span>
+<span class="n">media_precos</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;preco_unitario&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">media_precos</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>861.78
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Média da quantidade comprada por pedido</span>
+
+<span class="n">media_compra</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;quantidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">media_compra</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.53
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="nivel-1-basico">
+<h2>3. Nível 1 — Básico<a class="headerlink" href="#nivel-1-basico" title="Link to this heading">#</a></h2>
+<section id="selecao-de-dados">
+<h3>3.2 Seleção de Dados<a class="headerlink" href="#selecao-de-dados" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Exiba todos os <strong>pedidos feitos na cidade “São Paulo”</strong>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cidades_sao_paulo</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;cidade == &#39;São Paulo&#39;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cidades_sao_paulo</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     order_id        data  cliente_id         produto    categoria  quantidade  preco_unitario     cidade
+1           2  2024-01-02        1092  Fone de Ouvido  Eletrônicos           2             143  São Paulo
+4           5  2024-01-05        1060        Camiseta       Roupas           1              61  São Paulo
+6           7  2024-01-07        1082           Tênis       Roupas           3              95  São Paulo
+8           9  2024-01-09        1074  Fone de Ouvido  Eletrônicos           3             352  São Paulo
+10         11  2024-01-11        1087           Tênis       Roupas           1              84  São Paulo
+13         14  2024-01-14        1002        Notebook  Eletrônicos           4            1089  São Paulo
+24         25  2024-01-25        1032        Camiseta       Roupas           4              70  São Paulo
+26         27  2024-01-27        1057      Smartphone  Eletrônicos           4            1475  São Paulo
+27         28  2024-01-28        1021      Smartphone  Eletrônicos           3            2217  São Paulo
+32         33  2024-02-02        1041        Notebook  Eletrônicos           2            2571  São Paulo
+33         34  2024-02-03        1091        Camiseta       Roupas           4             145  São Paulo
+43         44  2024-02-13        1063        Notebook  Eletrônicos           2            1872  São Paulo
+47         48  2024-02-17        1020      Smartphone  Eletrônicos           1             861  São Paulo
+48         49  2024-02-18        1072  Fone de Ouvido  Eletrônicos           4             183  São Paulo
+63         64  2024-03-04        1043      Smartphone  Eletrônicos           3            1650  São Paulo
+64         65  2024-03-05        1007        Camiseta       Roupas           4             160  São Paulo
+68         69  2024-03-09        1080        Notebook  Eletrônicos           4            1395  São Paulo
+73         74  2024-03-14        1005           Tênis       Roupas           4             193  São Paulo
+75         76  2024-03-16        1003        Notebook  Eletrônicos           4            2062  São Paulo
+87         88  2024-03-28        1094        Notebook  Eletrônicos           2            1953  São Paulo
+91         92  2024-04-01        1077           Livro       Livros           2              32  São Paulo
+108       109  2024-04-18        1088        Camiseta       Roupas           4              85  São Paulo
+110       111  2024-04-20        1008        Notebook  Eletrônicos           4            2810  São Paulo
+114       115  2024-04-24        1087      Smartphone  Eletrônicos           4             890  São Paulo
+118       119  2024-04-28        1007  Fone de Ouvido  Eletrônicos           3             225  São Paulo
+120       121  2024-04-30        1034           Livro       Livros           2              77  São Paulo
+121       122  2024-05-01        1032        Notebook  Eletrônicos           1            2683  São Paulo
+124       125  2024-05-04        1027           Tênis       Roupas           4             154  São Paulo
+127       128  2024-05-07        1071           Livro       Livros           3              22  São Paulo
+128       129  2024-05-08        1011           Tênis       Roupas           1             141  São Paulo
+147       148  2024-05-27        1004           Livro       Livros           1              37  São Paulo
+151       152  2024-05-31        1008        Notebook  Eletrônicos           2            2549  São Paulo
+152       153  2024-06-01        1078           Livro       Livros           2              34  São Paulo
+155       156  2024-06-04        1041        Camiseta       Roupas           2             167  São Paulo
+156       157  2024-06-05        1076           Tênis       Roupas           2              52  São Paulo
+159       160  2024-06-08        1095        Notebook  Eletrônicos           4            2035  São Paulo
+163       164  2024-06-12        1093           Livro       Livros           2              95  São Paulo
+168       169  2024-06-17        1035           Tênis       Roupas           1             139  São Paulo
+172       173  2024-06-21        1058        Notebook  Eletrônicos           4            1539  São Paulo
+181       182  2024-06-30        1027        Notebook  Eletrônicos           4            2838  São Paulo
+182       183  2024-07-01        1027        Camiseta       Roupas           3              59  São Paulo
+187       188  2024-07-06        1074      Smartphone  Eletrônicos           3            1676  São Paulo
+197       198  2024-07-16        1069        Notebook  Eletrônicos           1            3224  São Paulo
+199       200  2024-07-18        1026        Notebook  Eletrônicos           4            1852  São Paulo
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Exiba apenas as <strong>colunas “produto”</strong> e <strong>“preco_unitario”</strong> das 10 primeiras linhas.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">duas_colunas</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;produto&#39;</span><span class="p">,</span> <span class="s1">&#39;preco_unitario&#39;</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">duas_colunas</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>          produto  preco_unitario
+0        Notebook            2066
+1  Fone de Ouvido             143
+2           Livro              48
+3        Notebook            3444
+4        Camiseta              61
+5      Smartphone            2430
+6           Tênis              95
+7        Camiseta             179
+8  Fone de Ouvido             352
+9        Notebook            3546
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="nivel-2-intermediario">
+<h2>4. Nível 2 — Intermediário<a class="headerlink" href="#nivel-2-intermediario" title="Link to this heading">#</a></h2>
+<section id="criar-coluna-calculada">
+<h3>4.1 Criar Coluna Calculada<a class="headerlink" href="#criar-coluna-calculada" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Adicione uma coluna <strong>“receita”</strong> (quantidade * preco_unitario).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Adicionando uma nova coluna chamada receita </span>
+
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;quantidade&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;preco_unitario&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   order_id        data  cliente_id         produto    categoria  quantidade  preco_unitario          cidade  receita
+0         1  2024-01-01        1051        Notebook  Eletrônicos           3            2066  Rio de Janeiro     6198
+1         2  2024-01-02        1092  Fone de Ouvido  Eletrônicos           2             143       São Paulo      286
+2         3  2024-01-03        1014           Livro       Livros           4              48  Belo Horizonte      192
+3         4  2024-01-04        1071        Notebook  Eletrônicos           3            3444  Belo Horizonte    10332
+4         5  2024-01-05        1060        Camiseta       Roupas           1              61       São Paulo       61
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="filtros">
+<h3>4.2 Filtros<a class="headerlink" href="#filtros" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Mostre apenas os pedidos de <strong>“Smartphone”</strong> com quantidade maior que 2.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">smartphone_maior2</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;produto == &#39;Smartphone&#39; and quantidade &gt; 2&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">smartphone_maior2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     order_id        data  cliente_id     produto    categoria  quantidade  preco_unitario          cidade  receita
+26         27  2024-01-27        1057  Smartphone  Eletrônicos           4            1475       São Paulo     5900
+27         28  2024-01-28        1021  Smartphone  Eletrônicos           3            2217       São Paulo     6651
+35         36  2024-02-05        1079  Smartphone  Eletrônicos           3            1462        Curitiba     4386
+63         64  2024-03-04        1043  Smartphone  Eletrônicos           3            1650       São Paulo     4950
+70         71  2024-03-11        1049  Smartphone  Eletrônicos           3            1690        Salvador     5070
+78         79  2024-03-19        1062  Smartphone  Eletrônicos           4            1865        Salvador     7460
+81         82  2024-03-22        1043  Smartphone  Eletrônicos           3            1956  Rio de Janeiro     5868
+86         87  2024-03-27        1013  Smartphone  Eletrônicos           4            1387  Belo Horizonte     5548
+114       115  2024-04-24        1087  Smartphone  Eletrônicos           4             890       São Paulo     3560
+116       117  2024-04-26        1010  Smartphone  Eletrônicos           3            2354        Salvador     7062
+117       118  2024-04-27        1080  Smartphone  Eletrônicos           4             838  Belo Horizonte     3352
+146       147  2024-05-26        1000  Smartphone  Eletrônicos           4            2264  Belo Horizonte     9056
+183       184  2024-07-02        1043  Smartphone  Eletrônicos           4            1623        Salvador     6492
+185       186  2024-07-04        1029  Smartphone  Eletrônicos           4            2065        Curitiba     8260
+187       188  2024-07-06        1074  Smartphone  Eletrônicos           3            1676       São Paulo     5028
+192       193  2024-07-11        1000  Smartphone  Eletrônicos           3            1173  Rio de Janeiro     3519
+195       196  2024-07-14        1076  Smartphone  Eletrônicos           4            1023  Belo Horizonte     4092
+196       197  2024-07-15        1002  Smartphone  Eletrônicos           3            2062        Curitiba     6186
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Mostre apenas os pedidos feitos em <strong>“Curitiba”</strong> com receita acima de 2000.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">curitiba_maior2000</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;cidade == &#39;Curitiba&#39; and receita &gt; 2000&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">curitiba_maior2000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     order_id        data  cliente_id     produto    categoria  quantidade  preco_unitario    cidade  receita
+31         32  2024-02-01        1058    Notebook  Eletrônicos           2            2122  Curitiba     4244
+35         36  2024-02-05        1079  Smartphone  Eletrônicos           3            1462  Curitiba     4386
+71         72  2024-03-12        1003    Notebook  Eletrônicos           3            2492  Curitiba     7476
+149       150  2024-05-29        1013    Notebook  Eletrônicos           4            2256  Curitiba     9024
+169       170  2024-06-18        1012    Notebook  Eletrônicos           4            3745  Curitiba    14980
+185       186  2024-07-04        1029  Smartphone  Eletrônicos           4            2065  Curitiba     8260
+196       197  2024-07-15        1002  Smartphone  Eletrônicos           3            2062  Curitiba     6186
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="agrupamentos">
+<h3>4.3 Agrupamentos<a class="headerlink" href="#agrupamentos" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Calcule a <strong>receita total por cidade</strong>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">receita_total_por_cidade</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cidade&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">receita_total_por_cidade</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>cidade
+Belo Horizonte     96679
+Curitiba           66575
+Rio de Janeiro     70292
+Salvador           97645
+São Paulo         121108
+Name: receita, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Calcule a <strong>receita total por categoria de produto</strong>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Receita total por categoria de produto</span>
+<span class="n">receita_total_por_categoria</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;categoria&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">receita_total_por_categoria</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>categoria
+Eletrônicos    425953
+Livros           3036
+Roupas          23310
+Name: receita, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Calcule a <strong>receita média por cliente</strong>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Receita média por cliente</span>
+
+<span class="n">receita_media_por_cliente</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cliente_id&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">receita_media_por_cliente</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>cliente_id
+1000     4926.666667
+1001      598.750000
+1002     2862.500000
+1003     5320.750000
+1004      183.500000
+            ...     
+1094     3906.000000
+1095     4200.000000
+1096      388.000000
+1098      394.000000
+1099    10173.000000
+Name: receita, Length: 87, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ordenacoes">
+<h3>4.4 Ordenações<a class="headerlink" href="#ordenacoes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Liste os <strong>5 produtos mais vendidos</strong> (quantidade).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mais_vendidos</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;produto&#39;</span><span class="p">)[</span><span class="s1">&#39;quantidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mais_vendidos</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>produto
+Notebook          117
+Camiseta           97
+Fone de Ouvido     84
+Tênis              83
+Smartphone         73
+Name: quantidade, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Liste os <strong>5 produtos que mais geraram receita</strong>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mais_receita</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;produto&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mais_receita</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>produto
+Notebook          282611
+Smartphone        118587
+Fone de Ouvido     24755
+Camiseta           12950
+Tênis              10360
+Name: receita, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="nivel-3-avancado">
+<h2>5. Nível 3 — Avançado<a class="headerlink" href="#nivel-3-avancado" title="Link to this heading">#</a></h2>
+<section id="analise-temporal">
+<h3>5.1 Análise Temporal<a class="headerlink" href="#analise-temporal" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Qual foi o <strong>total de receita por mês</strong>?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Qual foi o total de receita por mês?</span>
+
+<span class="c1"># certificando que a coluna data esteja no formato datetime</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;ano_mes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">)</span>
+
+<span class="n">receita_total_mes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;ano_mes&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">receita_total_mes</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ano_mes
+2024-01    90762
+2024-02    36566
+2024-03    92413
+2024-04    65776
+2024-05    52012
+2024-06    55770
+2024-07    59000
+Freq: M, Name: receita, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Qual <strong>mês teve mais vendas</strong> (quantidade)?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qnt_vendas_mes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;ano_mes&#39;</span><span class="p">)[</span><span class="s1">&#39;quantidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">mes_mais_vendas</span> <span class="o">=</span> <span class="n">qnt_vendas_mes</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()</span>
+<span class="n">vendas_max</span> <span class="o">=</span> <span class="n">qnt_vendas_mes</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;O mes com mais vendas foi </span><span class="si">{</span><span class="n">mes_mais_vendas</span><span class="si">}</span><span class="s2"> com uma quantidade de vendas igual a </span><span class="si">{</span><span class="n">vendas_max</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>O mes com mais vendas foi 2024-03 com uma quantidade de vendas igual a 87
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="clientes">
+<h3>5.2 Clientes<a class="headerlink" href="#clientes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Quem são os <strong>5 clientes que mais compraram em quantidade</strong>?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mais_compraram</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cliente_id&#39;</span><span class="p">)[</span><span class="s1">&#39;quantidade&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">mais_compraram</span> <span class="o">=</span> <span class="n">mais_compraram</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mais_compraram</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>cliente_id
+1061    21
+1014    16
+1059    15
+1027    15
+1003    13
+Name: quantidade, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Quem são os <strong>5 clientes que mais geraram receita</strong>?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cliente_mais_receita</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cliente_id&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">cliente_mais_receita</span> <span class="o">=</span> <span class="n">cliente_mais_receita</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cliente_mais_receita</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>cliente_id
+1003    21283
+1099    20346
+1043    17828
+1008    16833
+1061    15483
+Name: receita, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="visualizacoes">
+<h3>5.3 Visualizações<a class="headerlink" href="#visualizacoes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Crie um <strong>gráfico de barras</strong> da <strong>receita por cidade</strong>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">receita_cidade</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cidade&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span> <span class="c1"># tamanho do grafico</span>
+<span class="n">receita_cidade</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span> <span class="c1"># &quot;bar&quot; para definir grafico de barras</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Receita Total Por Cidade&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Cidade&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Receita&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>  <span class="c1"># Ajustar layout para não cortar os rótulos</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/e5f405aa907ed196228f7b7cc4ecd9ad45f3747c1c8c666f7bb2136107d83ff9.png" src="../_images/e5f405aa907ed196228f7b7cc4ecd9ad45f3747c1c8c666f7bb2136107d83ff9.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Crie um <strong>gráfico de linhas</strong> mostrando a <strong>evolução da receita</strong> ao longo do tempo.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">evol_receita</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;ano_mes&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">evol_receita</span> <span class="o">=</span> <span class="n">evol_receita</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">evol_receita</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Evolução da Receita ao Longo do Tempo&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Ano e Mês&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Receita&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/573f791f3c6250f5bc73f2d22df2cd4234006827ad0ebf1b5672a4543eb9be24.png" src="../_images/573f791f3c6250f5bc73f2d22df2cd4234006827ad0ebf1b5672a4543eb9be24.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Crie um <strong>gráfico de pizza</strong> mostrando a <strong>participação de cada categoria</strong> na receita total.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">part_por_categoria</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;categoria&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">part_por_categoria</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;pie&#39;</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;tab10&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Participação por categoria na receita total&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="c1"># Diferente dos demais gráficos, no de pizza não é necessário o eixo y.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/868b45704075d8a8654a20ba57ef2dae6beca9543aa45fd651587882393c607f.png" src="../_images/868b45704075d8a8654a20ba57ef2dae6beca9543aa45fd651587882393c607f.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="mini-dashboard-interativo">
+<h2>6. Mini Dashboard interativo<a class="headerlink" href="#mini-dashboard-interativo" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">receita_cidade</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cidade&#39;</span><span class="p">)[</span><span class="s1">&#39;receita&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">receita_cidade</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="s1">&#39;cidade&#39;</span><span class="p">,</span>
+            <span class="n">y</span><span class="o">=</span><span class="s1">&#39;receita&#39;</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Receita Total por Cidade&quot;</span><span class="p">,</span>
+            <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;cidade&#39;</span><span class="p">:</span> <span class="s1">&#39;Cidade&#39;</span><span class="p">,</span> <span class="s1">&#39;receita&#39;</span><span class="p">:</span> <span class="s1">&#39;Receita&#39;</span><span class="p">},</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;cidade&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">        <script type="text/javascript">
+        window.PlotlyConfig = {MathJaxConfig: 'local'};
+        if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+        if (typeof require !== 'undefined') {
+        require.undef("plotly");
+        requirejs.config({
+            paths: {
+                'plotly': ['https://cdn.plot.ly/plotly-2.35.2.min']
+            }
+        });
+        require(['plotly'], function(Plotly) {
+            window._Plotly = Plotly;
+        });
+        }
+        </script>
+        </div><div class="output text_html"><div>                            <div id="3e786ee8-b485-4676-b388-5d7b90371e0d" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("3e786ee8-b485-4676-b388-5d7b90371e0d")) {                    Plotly.newPlot(                        "3e786ee8-b485-4676-b388-5d7b90371e0d",                        [{"alignmentgroup":"True","hovertemplate":"Cidade=%{x}\u003cbr\u003eReceita=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Belo Horizonte","marker":{"color":"#636efa","pattern":{"shape":""}},"name":"Belo Horizonte","offsetgroup":"Belo Horizonte","orientation":"v","showlegend":true,"textposition":"auto","x":["Belo Horizonte"],"xaxis":"x","y":[96679],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Cidade=%{x}\u003cbr\u003eReceita=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Curitiba","marker":{"color":"#EF553B","pattern":{"shape":""}},"name":"Curitiba","offsetgroup":"Curitiba","orientation":"v","showlegend":true,"textposition":"auto","x":["Curitiba"],"xaxis":"x","y":[66575],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Cidade=%{x}\u003cbr\u003eReceita=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Rio de Janeiro","marker":{"color":"#00cc96","pattern":{"shape":""}},"name":"Rio de Janeiro","offsetgroup":"Rio de Janeiro","orientation":"v","showlegend":true,"textposition":"auto","x":["Rio de Janeiro"],"xaxis":"x","y":[70292],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Cidade=%{x}\u003cbr\u003eReceita=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Salvador","marker":{"color":"#ab63fa","pattern":{"shape":""}},"name":"Salvador","offsetgroup":"Salvador","orientation":"v","showlegend":true,"textposition":"auto","x":["Salvador"],"xaxis":"x","y":[97645],"yaxis":"y","type":"bar"},{"alignmentgroup":"True","hovertemplate":"Cidade=%{x}\u003cbr\u003eReceita=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"S\u00e3o Paulo","marker":{"color":"#FFA15A","pattern":{"shape":""}},"name":"S\u00e3o Paulo","offsetgroup":"S\u00e3o Paulo","orientation":"v","showlegend":true,"textposition":"auto","x":["S\u00e3o Paulo"],"xaxis":"x","y":[121108],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Cidade"},"categoryorder":"array","categoryarray":["Belo Horizonte","Curitiba","Rio de Janeiro","Salvador","S\u00e3o Paulo"]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Receita"}},"legend":{"title":{"text":"Cidade"},"tracegroupgap":0},"title":{"text":"Receita Total por Cidade"},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('3e786ee8-b485-4676-b388-5d7b90371e0d');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div></div></div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conclusao">
+<h1>7. Conclusão<a class="headerlink" href="#conclusao" title="Link to this heading">#</a></h1>
+<p>Neste notebook, explorei várias técnicas de análise de dados com pandas, desde operações básicas até análises mais complexas. O uso de gráficos ajudou a visualizar e compreender melhor as tendências de vendas, clientes e produtos. O relatório final e o mini dashboard fornecem um resumo valioso dos insights obtidos durante a análise.</p>
+<p>Esse trabalho serve como um ponto de partida sólido para análise de vendas e pode ser expandido com análises mais profundas conforme necessário.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Análise de Vendas - Portfólio de Análise de Dados</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carregar-e-explorar-o-dataset">2. Carregar e Explorar o Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nivel-1-basico">3. Nível 1 — Básico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selecao-de-dados">3.2 Seleção de Dados</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nivel-2-intermediario">4. Nível 2 — Intermediário</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#criar-coluna-calculada">4.1 Criar Coluna Calculada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filtros">4.2 Filtros</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupamentos">4.3 Agrupamentos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordenacoes">4.4 Ordenações</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nivel-3-avancado">5. Nível 3 — Avançado</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-temporal">5.1 Análise Temporal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clientes">5.2 Clientes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacoes">5.3 Visualizações</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mini-dashboard-interativo">6. Mini Dashboard interativo</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">7. Conclusão</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Gabriel Thomazi Rosa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
